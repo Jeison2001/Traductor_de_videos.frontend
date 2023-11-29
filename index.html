@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Traductor de videos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Traductor de videos</h1>
+    <div class="container">
+        <div class="upload-section">
+            <h2>Carga de videos</h2>
+            <form>
+                <label for="file-upload" class="custom-file-input">
+                    <span>Elegir un video</span>
+                    <input type="file" id="file-upload" name="file">
+                </label>
+                <div id="file-details">
+                    <p id="file-name">Nombre del video: <span></span></p>
+                    <p id="file-size">Tamaño del video: <span></span> bytes</p>
+                </div>
+                <button id="submit-button" type="button">Subir y traducir</button>
+            </form>
+        </div>
+        <div class="table-section">
+            <h2>Lista de videos procesados</h2>
+            <button id="update-button" type="button">Actualizar tabla</button>
+            <table>
+                <tr>
+                    <th>Nombre del video</th>
+                    <th>Descargar</th>
+                    <th>Reproducir</th>
+                </tr>
+            </table>
+            <div id="video-player-container">
+                <button id="close-button">&times;</button>
+                <div id="video-wrapper">
+                    <!-- Aquí se insertará el reproductor de video -->
+                </div>
+            </div> <!-- Contenedor para el reproductor de video -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
